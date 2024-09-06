@@ -2,6 +2,7 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
 import Anmeldelse from '../components/Anmeldelse.astro';
+import Kapitler from '../components/Kapitler.astro';
 import Link from '../components/Link.astro';
 ---
 <MainLayout title="Titel">
@@ -10,7 +11,7 @@ import Link from '../components/Link.astro';
 		<Button>Klik!</Button>
 		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
 	</article> -->
-	<section id="hero">
+	<section id="hero" class="grid grid-cols-1 lg:grid-cols-2">
 		<div class="">
 			<img src="/src/assets/bog_1.jpg" alt="bingbong">
 		</div>
@@ -51,7 +52,23 @@ import Link from '../components/Link.astro';
 		</div>
 	</article>
 	<section id="kapitler">
-		<h2>kapitler</h2>
+		<h2>Kapitler</h2>
+		<div class="grid grid-cols-1 lg:grid-cols-2">
+			<div class="">
+			<Kapitler titel="Kapitel 1 - Intro til street foto">Hvad er street foto? Det handler i bund og grund om at skyde byens liv og byens geometri (urban geometry). 
+			I dette kapitel får du en grundig intro til hvad street foto er og et overblik over nogen af de kendte street-fotografer. 
+			Alt krydret med en masse gode eksempler på street fotos.</Kapitler>
+			<Kapitler titel="Kapitel 2 - Om at skyde street">Vil du skyde street? Så er der ikke nogen vej udenom: Du skal ud på gaderne og prøve det! I dette kapitel får du en teknisk indføring i hvordan du bedst skyder street. Uanset om du er begynder eller professionel, er der mange gode tekniske tips og tricks til street-skyderiet.</Kapitler>
+			<Kapitler titel="Kapitel 3 - Om at finde det rette motiv">Indimellem er man heldig, andre gange kommer man hjem helt uden gode motiver. Med et par tips og tricks til at finde de rette motiver, stiger chancen gevaldigt for at fange de gode motiver.</Kapitler>
+			<Kapitler titel="Kapitel 4 - Digital street foto">De fleste af os skyder oftest digitalt fordi det er billigere og nemmere. Og nogen teknikker og fremgangsmåder egner sig kun til digital street foto. I dette kapitel får du en række tips og tricks til digital street-foto. </Kapitler>
+			</div>
+			<div class="">
+			<Kapitler titel="Kapitel 5 - Analog street foto">Analog er sejt fordi det er mere “ægte,” dyrere og mere besværligt end digital. Det signalerer entusiasme. Nogle teknikker og fremgangsmåder egner sig bedst til analog street foto. I dette kapitel får du en række tips og tricks til analog street-foto. </Kapitler>
+			<Kapitler titel="Kapitel 6 - Om at skyde sort/hvid">Alle street-fotografer skyder sort/hvid nu og da. Nogen altid. Hvorfor? Hvad er der specielt ved sort/hvid fotografering, og hvad adskiller sort/hvid fra farvefotografering? Her får du en række tips og tricks til sort/hvid fotografering. </Kapitler>
+			<Kapitler titel="Kapitel 7 - Kreative teknikker ">Dobbelteksponeringer, ICM (intentional camera moves), smadrede objektiver, gamle filmruller og alle mulige andre, spændende kreative teknikker kan løfte dine fotografier fra at være kedelige dokumentationer af hverdagen til at blive vilde kunststykker. Så dyk ned i dette kapitel om eksperimenterende teknikker!</Kapitler>
+			<Kapitler titel="Kapitel 8 - Kom helt tæt på!">Street foto handler om at fotografere livet på gaden - men tør du at gå helt tæt på fremmede mennesker og knipse løs? Du kan lige så godt øve dig, for det er det der vil gøre dig til en bedre street-fotograf…</Kapitler>
+			</div>
+		</div>
 	</section>
 	<section class="mt-32">
 		<h2 class="text-4xl font-bold mb-8">Kuristerne siger</h2>
