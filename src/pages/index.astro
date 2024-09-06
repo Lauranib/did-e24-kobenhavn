@@ -11,20 +11,20 @@ import Link from '../components/Link.astro';
 		<Button>Klik!</Button>
 		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
 	</article> -->
-	<section id="hero" class="grid grid-cols-1 lg:grid-cols-2">
+	<section id="hero" class="grid grid-cols-1 lg:grid-cols-2 gap-4">
 		<div class="">
 			<img src="/src/assets/bog_1.jpg" alt="bingbong">
 		</div>
-		<div class="">
-			<h1>Københavnerbilleder - en guide til hipster foto</h1>
-			<h2>af Sten Simons</h2>
+		<div class="grid grid-rows-3">
+			<div class=""><h1 class="text-4xl font-bold pb-4">Københavnerbilleder - en guide til hipster foto</h1>
+			<h2>af Sten Simons</h2></div>
 			<p>Københavnerbilleder er de danske streetfotografers bibel: Det er en fusion mellem et kunstværk og en lærebog. 
 				Bogen gennemgår alle væsentlige aspekter af streetfotografering fra grundlæggende teknik til kreative eksperimenter. 
 				Alt sammen krydret med masser af inspirerende fotos. God læselyst!	 </p>
-			<Button>Køb her</Button>
+			<a href="#formular"><Button variant="primary" size="large">Køb nu</Button></a>
 		</div>
 	</section>
-	<section id="facts">
+	<section id="facts" class="max-w-lg mx-auto my-16 p-4 grid grid-cols-1 lg:grid-cols-2 lg:gap-4">
 		<div class="">
 			<ul>
 				<li>Titel: Københavnerbilleder - en guide til hipster foto</li>
@@ -40,7 +40,7 @@ import Link from '../components/Link.astro';
 			</ul>
 		</div>
 	</section>
-	<article>
+	<article class="grid grid-cols-1  lg:grid-cols-3">
 		<div class="">
 			<img src="/src/assets/bog_1.jpg" alt="bingbong">
 		</div>
@@ -51,28 +51,24 @@ import Link from '../components/Link.astro';
 			<img src="/src/assets/bog_3.jpg" alt="bingbong">
 		</div>
 	</article>
-	<section id="kapitler">
-		<h2>Kapitler</h2>
-		<div class="grid grid-cols-1 lg:grid-cols-2">
-			<div class="">
-			<Kapitler titel="Kapitel 1 - Intro til street foto">Hvad er street foto? Det handler i bund og grund om at skyde byens liv og byens geometri (urban geometry). 
+	<section id="kapitler" class="lg:mx-32">
+		<h2 class="text-4xl font-bold pb-4">Kapitler</h2>
+		<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+			<Kapitler titel="Kapitel 1 - Intro til street foto">Hvad er street foto? Det handler i bund og grund om at skyde byens liv og byens geometri (urban geometry).
 			I dette kapitel får du en grundig intro til hvad street foto er og et overblik over nogen af de kendte street-fotografer. 
 			Alt krydret med en masse gode eksempler på street fotos.</Kapitler>
 			<Kapitler titel="Kapitel 2 - Om at skyde street">Vil du skyde street? Så er der ikke nogen vej udenom: Du skal ud på gaderne og prøve det! I dette kapitel får du en teknisk indføring i hvordan du bedst skyder street. Uanset om du er begynder eller professionel, er der mange gode tekniske tips og tricks til street-skyderiet.</Kapitler>
 			<Kapitler titel="Kapitel 3 - Om at finde det rette motiv">Indimellem er man heldig, andre gange kommer man hjem helt uden gode motiver. Med et par tips og tricks til at finde de rette motiver, stiger chancen gevaldigt for at fange de gode motiver.</Kapitler>
 			<Kapitler titel="Kapitel 4 - Digital street foto">De fleste af os skyder oftest digitalt fordi det er billigere og nemmere. Og nogen teknikker og fremgangsmåder egner sig kun til digital street foto. I dette kapitel får du en række tips og tricks til digital street-foto. </Kapitler>
-			</div>
-			<div class="">
 			<Kapitler titel="Kapitel 5 - Analog street foto">Analog er sejt fordi det er mere “ægte,” dyrere og mere besværligt end digital. Det signalerer entusiasme. Nogle teknikker og fremgangsmåder egner sig bedst til analog street foto. I dette kapitel får du en række tips og tricks til analog street-foto. </Kapitler>
 			<Kapitler titel="Kapitel 6 - Om at skyde sort/hvid">Alle street-fotografer skyder sort/hvid nu og da. Nogen altid. Hvorfor? Hvad er der specielt ved sort/hvid fotografering, og hvad adskiller sort/hvid fra farvefotografering? Her får du en række tips og tricks til sort/hvid fotografering. </Kapitler>
 			<Kapitler titel="Kapitel 7 - Kreative teknikker ">Dobbelteksponeringer, ICM (intentional camera moves), smadrede objektiver, gamle filmruller og alle mulige andre, spændende kreative teknikker kan løfte dine fotografier fra at være kedelige dokumentationer af hverdagen til at blive vilde kunststykker. Så dyk ned i dette kapitel om eksperimenterende teknikker!</Kapitler>
 			<Kapitler titel="Kapitel 8 - Kom helt tæt på!">Street foto handler om at fotografere livet på gaden - men tør du at gå helt tæt på fremmede mennesker og knipse løs? Du kan lige så godt øve dig, for det er det der vil gøre dig til en bedre street-fotograf…</Kapitler>
-			</div>
 		</div>
 	</section>
-	<section class="mt-32">
+	<section class="mt-16 lg:mx-32">
 		<h2 class="text-4xl font-bold mb-8">Kuristerne siger</h2>
-		<div class="grid grid-cols-1 lg:grid-cols-3 mx-auto gap-4">
+		<div class="grid grid-cols-1 lg:grid-cols-3 mx-auto gap-8">
 			<Anmeldelse titel="Godt!" stjerner="5" forfatter="Hanne Hovgaard, Berlingeren" anmeldelseid="a1">
 				Københavnerbilleder er en grundig introduktion til at skyde billeder med retro-kant. 
 				Hvad enten du er har arbejdet med foto siden 135-filmen kom på markedet, du kun har skudt digitalt eller er helt nybegynder, er der masser af tips og tricks i bogen.
@@ -86,5 +82,77 @@ import Link from '../components/Link.astro';
 				Hvad enten du er har arbejdet med foto siden 135-filmen kom på markedet, du kun har skudt digitalt eller er helt nybegynder, er der masser af tips og tricks i bogen.
 			</Anmeldelse>
 		</div>
+	</section>
+	<section id="forfatteren" class="grid grid-cols-1 lg:grid-cols-2">
+		<div class="">
+			<img src="/src/assets/person.jpg" alt="bingbong">
+		</div>
+		<div class="">
+			<h1>Forfatteren</h1>
+			<p>Sten Simons har en lang foto-karriere bag sig. Det hele startede i 00'erne, da han gik rundt i Pisserenden for at fotografere ungdommens forfald. Det ledte til en række udstillinger, og blev senere til hans først fotobog “Ungdomsdruk - pinlige billeder fra nattelivet.”
+			Derefter tog karrieren fart: Han blev fotojournalist og dokumenterede en masse dagligdagsstof fra Amager på dagbladet “Amagerkaneren.” Sideløbende begyndte han at undervise i foto, og har skrevet et utal af bøger, herunder bestsellerne Scener fra S-toget, Brun mad - en visuel odysse, og lærebogen Fotografering for evnesvage.
+
+			Foto af forfatteren: Se billedet “sten_simons.jpg”
+			</p>
+		</div>
+	</section>
+	<article class="mt-16">
+		<h2>Galleri</h2>
+		<div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+			<img src="/src/assets/foto_1.jpg" alt="bingbong" class="transition-all duration-200 hover:scale-105">
+			<img src="/src/assets/foto_2.jpg" alt="bingbong" class="transition-all duration-200 hover:scale-105">
+			<img src="/src/assets/foto_3.jpg" alt="bingbong" class="transition-all duration-200 hover:scale-105">
+			<img src="/src/assets/foto_4.jpg" alt="bingbong" class="transition-all duration-200 hover:scale-105">
+			<img src="/src/assets/foto_5.jpg" alt="bingbong" class="transition-all duration-200 hover:scale-105">
+			<img src="/src/assets/foto_6.jpg" alt="bingbong" class="transition-all duration-200 hover:scale-105">
+			<img src="/src/assets/foto_7.jpg" alt="bingbong" class="transition-all duration-200 hover:scale-105">
+			<img src="/src/assets/foto_8.jpg" alt="bingbong" class="transition-all duration-200 hover:scale-105">
+		</div>
+	</article>
+	<section  id="formular" class="max-w-lg mx-auto mt-16 p-4">
+		<h2 class="text-4xl font-bold pb-4">Tilmeld dig</h2>
+		<form class="space-y-4 grid grid-cols-1 gap-6">
+		
+			<div class="grid gap-3">
+				<label for="navn">Navn:</label>
+				<input type="text" id="navn" name="navn" placeholder="Skriv her">
+			</div>
+
+			<div class="grid gap-3">
+				<label for="adresse">Adresse:</label>
+				<input type="text" id="adresse" name="adresse" placeholder="Skriv her">
+			</div>
+
+			<div class="grid gap-3 grid-cols-6">
+				<label for="postnummer" class="col-span-6">Postnummer & by:</label>
+				<input type="text" id="postnummer" name="postnummer" class="col-span-2" placeholder="0000">
+				<input type="text" id="bynavn" name="bynavn" disabled class="col-span-4" placeholder="Skriv her">
+			</div>
+
+			<div class="grid gap-3">
+				<label for="telefon">Telefon:</label>
+				<input type="tel" id="telefon" name="telefon" placeholder="+45">
+			</div>
+
+			<div class="">
+				<input type="checkbox" id="nyhedsbrev" name="nyhedsbrev">
+				<label for="nyhedsbrev">Ja tak til nyhedsbreve og tilbud</label>
+			</div>
+
+			<div class="">
+				<span>Betaling:</span>
+				<input type="radio" id="kredit" name="levering">
+				<label for="kredit">Kredit</label>
+				<input type="radio" id="paypal" name="levering" checked="checked">
+				<label for="paypal">Paypal</label>
+				<input type="radio" id="mobilepay" name="levering">
+				<label for="mobilepay">Mobilepay</label>
+				
+			</div>
+
+			<div class="flex justify-end hover:rotate-hor-top">
+				<Button variant="primary" size="medium">Til betaling</Button>
+			</div>
+		</form>
 	</section>
 </MainLayout>
