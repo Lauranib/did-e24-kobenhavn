@@ -1,15 +1,73 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
+import Anmeldelse from '../components/Anmeldelse.astro';
 import Link from '../components/Link.astro';
 ---
 <MainLayout title="Titel">
-	<article>
+	<!-- <article>
 		<h1>Index overskrift</h1>
 		<Button>Klik!</Button>
 		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
+	</article> -->
+	<section id="hero">
+		<div class="">
+			<img src="/src/assets/bog_1.jpg" alt="bingbong">
+		</div>
+		<div class="">
+			<h1>Københavnerbilleder - en guide til hipster foto</h1>
+			<h2>af Sten Simons</h2>
+			<p>Københavnerbilleder er de danske streetfotografers bibel: Det er en fusion mellem et kunstværk og en lærebog. 
+				Bogen gennemgår alle væsentlige aspekter af streetfotografering fra grundlæggende teknik til kreative eksperimenter. 
+				Alt sammen krydret med masser af inspirerende fotos. God læselyst!	 </p>
+			<Button>Køb her</Button>
+		</div>
+	</section>
+	<section id="facts">
+		<div class="">
+			<ul>
+				<li>Titel: Københavnerbilleder - en guide til hipster foto</li>
+				<li>Forfatter: Sten Simons</li>
+				<li>Antal sider: 344</li>
+			</ul>
+		</div>
+		<div class="">
+			<ul>
+				<li>Forlag: Mellem Linjerne</li>
+				<li>ISBN: 987-6-987654-32-1</li>
+				<li>Pris: 399.-</li>
+			</ul>
+		</div>
+	</section>
+	<article>
+		<div class="">
+			<img src="/src/assets/bog_1.jpg" alt="bingbong">
+		</div>
+		<div class="">
+			<img src="/src/assets/bog_2.jpg" alt="bingbong">
+		</div>
+		<div class="">
+			<img src="/src/assets/bog_3.jpg" alt="bingbong">
+		</div>
 	</article>
-	<div class="">
-	
-	</div>
+	<section id="kapitler">
+		<h2>kapitler</h2>
+	</section>
+	<section class="mt-32">
+		<h2 class="text-4xl font-bold mb-8">Kuristerne siger</h2>
+		<div class="grid grid-cols-1 lg:grid-cols-3 mx-auto gap-4">
+			<Anmeldelse titel="Godt!" stjerner="5" forfatter="Hanne Hovgaard, Berlingeren" anmeldelseid="a1">
+				Københavnerbilleder er en grundig introduktion til at skyde billeder med retro-kant. 
+				Hvad enten du er har arbejdet med foto siden 135-filmen kom på markedet, du kun har skudt digitalt eller er helt nybegynder, er der masser af tips og tricks i bogen.
+			</Anmeldelse>
+			<Anmeldelse titel="Underholdende" stjerner="4" forfatter="Hanne Hovgaard, Berlingeren" anmeldelseid="a2">
+				Københavnerbilleder er en grundig introduktion til at skyde billeder med retro-kant. 
+				Hvad enten du er har arbejdet med foto siden 135-filmen kom på markedet, du kun har skudt digitalt eller er helt nybegynder, er der masser af tips og tricks i bogen.
+			</Anmeldelse>
+			<Anmeldelse titel="Magisk!" stjerner="6" forfatter="Hanne Hovgaard, Berlingeren" anmeldelseid="a3">
+				Københavnerbilleder er en grundig introduktion til at skyde billeder med retro-kant. 
+				Hvad enten du er har arbejdet med foto siden 135-filmen kom på markedet, du kun har skudt digitalt eller er helt nybegynder, er der masser af tips og tricks i bogen.
+			</Anmeldelse>
+		</div>
+	</section>
 </MainLayout>
