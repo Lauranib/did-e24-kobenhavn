@@ -18,14 +18,14 @@ import Link from '../components/Link.astro';
 		<div class="grid grid-rows-3">
 			<div class=""><h1 class="text-4xl font-bold pb-4">Københavnerbilleder - en guide til hipster foto</h1>
 			<h2>af Sten Simons</h2></div>
-			<p>Københavnerbilleder er de danske streetfotografers bibel: Det er en fusion mellem et kunstværk og en lærebog. 
+			<p class="mb-10 lg:mb-0">Københavnerbilleder er de danske streetfotografers bibel: Det er en fusion mellem et kunstværk og en lærebog. 
 				Bogen gennemgår alle væsentlige aspekter af streetfotografering fra grundlæggende teknik til kreative eksperimenter. 
 				Alt sammen krydret med masser af inspirerende fotos. God læselyst!	 </p>
 			<a href="#formular"><Button variant="primary" size="large">Køb nu</Button></a>
 		</div>
 	</section>
-	<section id="facts" class="max-w-lg mx-auto my-16 p-4 grid grid-cols-1 lg:grid-cols-2 lg:gap-4">
-		<div class="">
+	<section id="facts" class="max-w-lg mx-auto mb-16 lg:my-16 p-4 grid grid-cols-1 lg:grid-cols-2 lg:gap-4">
+		<div class="lg:text-right">
 			<ul>
 				<li>Titel: Københavnerbilleder - en guide til hipster foto</li>
 				<li>Forfatter: Sten Simons</li>
@@ -41,17 +41,17 @@ import Link from '../components/Link.astro';
 		</div>
 	</section>
 	<article class="grid grid-cols-1  lg:grid-cols-3">
-		<div class="">
+		<div class="transition-all duration-200 hover:scale-105">
 			<img src="/src/assets/bog_1.jpg" alt="bingbong">
 		</div>
-		<div class="">
+		<div class="transition-all duration-200 hover:scale-105">
 			<img src="/src/assets/bog_2.jpg" alt="bingbong">
 		</div>
-		<div class="">
+		<div class="transition-all duration-200 hover:scale-105">
 			<img src="/src/assets/bog_3.jpg" alt="bingbong">
 		</div>
 	</article>
-	<section id="kapitler" class="lg:mx-32">
+	<section id="kapitler" class="mt-16 lg:mx-32">
 		<h2 class="text-4xl font-bold pb-4">Kapitler</h2>
 		<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
 			<Kapitler titel="Kapitel 1 - Intro til street foto">Hvad er street foto? Det handler i bund og grund om at skyde byens liv og byens geometri (urban geometry).
@@ -83,21 +83,10 @@ import Link from '../components/Link.astro';
 			</Anmeldelse>
 		</div>
 	</section>
-	<section id="forfatteren" class="grid grid-cols-1 lg:grid-cols-2">
-		<div class="">
-			<img src="/src/assets/person.jpg" alt="bingbong">
-		</div>
-		<div class="">
-			<h1>Forfatteren</h1>
-			<p>Sten Simons har en lang foto-karriere bag sig. Det hele startede i 00'erne, da han gik rundt i Pisserenden for at fotografere ungdommens forfald. Det ledte til en række udstillinger, og blev senere til hans først fotobog “Ungdomsdruk - pinlige billeder fra nattelivet.”
-			Derefter tog karrieren fart: Han blev fotojournalist og dokumenterede en masse dagligdagsstof fra Amager på dagbladet “Amagerkaneren.” Sideløbende begyndte han at undervise i foto, og har skrevet et utal af bøger, herunder bestsellerne Scener fra S-toget, Brun mad - en visuel odysse, og lærebogen Fotografering for evnesvage.
-
-			Foto af forfatteren: Se billedet “sten_simons.jpg”
-			</p>
-		</div>
-	</section>
 	<article class="mt-16">
-		<h2>Galleri</h2>
+		<div class="text-center">
+			<h2 class="text-4xl font-bold mb-8">Galleri</h2>
+		</div>
 		<div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
 			<img src="/src/assets/foto_1.jpg" alt="bingbong" class="transition-all duration-200 hover:scale-105">
 			<img src="/src/assets/foto_2.jpg" alt="bingbong" class="transition-all duration-200 hover:scale-105">
@@ -109,6 +98,19 @@ import Link from '../components/Link.astro';
 			<img src="/src/assets/foto_8.jpg" alt="bingbong" class="transition-all duration-200 hover:scale-105">
 		</div>
 	</article>
+	<section id="forfatteren" class="grid grid-cols-1 mt-16 lg:grid-cols-2 gap-4">
+		<div class="">
+			<img src="/src/assets/person.jpg" alt="bingbong">
+		</div>
+		<div class="">
+			<h1 class="text-4xl font-bold mb-8">Forfatteren</h1>
+			<p>Sten Simons har en lang foto-karriere bag sig. Det hele startede i 00'erne, da han gik rundt i Pisserenden for at fotografere ungdommens forfald. Det ledte til en række udstillinger, og blev senere til hans først fotobog “Ungdomsdruk - pinlige billeder fra nattelivet.”
+			Derefter tog karrieren fart: Han blev fotojournalist og dokumenterede en masse dagligdagsstof fra Amager på dagbladet “Amagerkaneren.” Sideløbende begyndte han at undervise i foto, og har skrevet et utal af bøger, herunder bestsellerne Scener fra S-toget, Brun mad - en visuel odysse, og lærebogen Fotografering for evnesvage.
+
+			Foto af forfatteren: Se billedet “sten_simons.jpg”
+			</p>
+		</div>
+	</section>
 	<section  id="formular" class="max-w-lg mx-auto mt-16 p-4">
 		<h2 class="text-4xl font-bold pb-4">Tilmeld dig</h2>
 		<form class="space-y-4 grid grid-cols-1 gap-6">
